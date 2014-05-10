@@ -10,6 +10,12 @@ namespace MySiteGrabber
     {
         static void Main(string[] args)
         {
+
+            string _url = "http://www.rambler.ru";
+            var siteGrabber = new SiteGrabber(_url);
+            siteGrabber.GetSiteContent();
+            Console.WriteLine("end a program");
+            Console.ReadLine();
         }
     }
 }
